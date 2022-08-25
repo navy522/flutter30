@@ -4,6 +4,7 @@ import 'package:flutter_catalog/pages/login_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     initialRoute: "/login",
@@ -11,8 +12,8 @@ void main() {
       "/home": (context) => HomePage(),
       "/login": (context) => LoginPage(),
     },
-    themeMode: ThemeMode.dark,
-    theme: ThemeData(primarySwatch: Colors.orange,fontFamily: GoogleFonts.gaegu().fontFamily),
-    darkTheme: ThemeData(primarySwatch: Colors.red, fontFamily: GoogleFonts.fahkwang().fontFamily),
+    themeMode: ThemeMode.light,
+    theme: ThemeData(primarySwatch: Colors.orange,textTheme: GoogleFonts.recursiveTextTheme()),
+    darkTheme: ThemeData(primarySwatch: Colors.red, fontFamily: GoogleFonts.akayaKanadaka().fontFamily),
   ));
 }
