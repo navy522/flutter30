@@ -59,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
                   width: changeButton ? 70 : 100,
                   height: 40,
                   decoration: BoxDecoration(color: Colors.orange,borderRadius: BorderRadius.circular( changeButton ? 5 : 50)),
-                  duration: Duration(milliseconds: 1000),
+                  duration: Duration(seconds: 1),
                   child: changeButton ? Icon(Icons.done_outline_outlined) : Text("Login",style: TextStyle(color: Colors.black,fontSize: 20,
                   )),
                 ),
